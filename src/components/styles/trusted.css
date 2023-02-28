@@ -1,0 +1,37 @@
+.title__partner{
+    display: flex;
+    gap: 2vw;
+    font-size: 3vw;
+    color: #fff;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    align-items: center;
+}
+.title__partner img{
+    width: 3vw;
+}
+.item__partner{
+    width: 100%;
+    background-color: #505050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    border: 1px solid transparent;
+}
+.item__partner img {
+    width: 100%;
+    height: 7vw;
+    object-fit: contain;
+}
+.body__partner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.8vw;
+    width: 80%;
+    margin: 5vw auto;
+}
+.item__partner:hover{
+    border: 1px solid #FFE99C;
+    cursor: pointer;
+}

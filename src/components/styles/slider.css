@@ -1,0 +1,94 @@
+.slider__item img {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.slider__item {
+    cursor: pointer;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider__item:nth-child(3n+0) {
+    border: 4px solid red;
+}
+
+.slider__one {
+    margin: 5vw 0;
+}
+
+.slider__item .text__content {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: .4s;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.slider__item:hover .text__content {
+    left: 0px;
+}
+
+.slider__one.slick-initialized .slick-slide:nth-child(2n+1) .slider__item {
+    position: relative;
+    bottom: -2vw;
+}
+
+.slider__one .slick-track {
+    padding: 2vw 0 !important;
+}
+
+.slider__item .column {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.slider__item .column h1 {
+    font-size: 2vw;
+    color: #FFE99C;
+}
+
+.slider__item * {
+    font-family: 'Roboto';
+    font-weight: 200;
+}
+
+.slider__item .column p {
+    color: #ffff;
+    font-size: 1vw;
+}
+
+.slider__item .column p {
+    display: grid;
+    gap: 1vw;
+}
+
+.slick-next:before {
+    content: "" !important;
+    background-image: url(../../assets/img/arrow.svg) !important;
+    width: 5vw;
+    height: 4vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 72%;
+}
+
+.slick-prev:before {
+    content: "" !important;
+    background-size: 72%;
+    background-image: url(../../assets/img/arrow.svg) !important;
+    width: 5vw;
+    height: 4vw;
+    position: absolute;
+    left: -7vw;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+}

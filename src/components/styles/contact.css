@@ -1,0 +1,106 @@
+.contact {
+    padding: 3vw;
+    background: #505050;
+    border-radius: 2vw;
+    position: relative;
+    margin-bottom: 10vw;
+    padding-bottom: 5vw;
+}
+
+.contact *,
+.contact {
+    color: #fff;
+    font-family: 'Roboto';
+}
+
+
+.contact .item__input {
+    display: grid;
+    gap: 1vw;
+    margin-bottom: 2vw;
+}
+
+.contact .item__input p {
+    font-size: 1vw;
+    line-height: 1.4vw;
+    text-transform: uppercase;
+    color: white;
+}
+.contact .row__contact {
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+.contact .title__partner{
+    margin-bottom: 3vw;
+}
+.contact input{
+    background-color: transparent !important;
+    color: #fff;
+    border: none !important;
+    font-size: 2vw !important;
+    border-bottom: 1px solid #ffff !important;
+}
+.form-controls.red-line{
+    border-bottom: solid 1px red !important;
+}
+*:focus{
+    outline: none;
+}
+.contact button{
+    width: 100%;
+    padding: 1vw;
+    color: #000;
+    background-color: #fff;
+    border: transparent;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: .4s;
+    text-transform: uppercase;
+}
+.contact button:hover{
+    background-color: rgb(184, 184, 184);
+}
+.contact button:active{
+    transform: scale(.9);
+}
+.contact .img img{
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    width: 21vw;
+    z-index: 3;
+}
+@media (max-width:767px) {
+    .contact .img img{
+        display: none;
+    }
+}
+.contact .img::after{
+    width: 19vw;
+    height:19vw;
+    border-radius: 50%;
+    background-color: #FFE99C;
+    position: absolute;
+    content: "";
+    right: 4vw;
+}
+.react-tel-input .form-control{
+    width: 100% !important  ;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #fff !important;
+    border-radius: 0  !important;
+}
+.contact .react-tel-input .flag-dropdown{
+    background-color: transparent;
+    border: transparent;
+}
+.contact .react-tel-input .country-list{
+    background-color: #181818;
+}
+.contact .react-tel-input .country-list .country:hover{
+    background-color: #000000;
+}
+.contact .react-tel-input .country-list .country.highlight{
+    background-color: #000000;
+}
